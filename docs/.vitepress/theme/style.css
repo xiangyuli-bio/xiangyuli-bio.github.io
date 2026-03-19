@@ -519,6 +519,58 @@ body {
   text-decoration: underline;
 }
 
+.honors-section {
+  margin-top: 10px;
+}
+
+.honors-list {
+  display: grid;
+  gap: 14px;
+}
+
+.honors-item {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding-top: 14px;
+  border-top: 1px solid #d6dde5;
+}
+
+.dark .honors-item {
+  border-top-color: rgba(151, 172, 193, 0.18);
+}
+
+.honors-item__year {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 72px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(47, 120, 218, 0.12);
+  color: var(--vp-c-brand-1);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dark .honors-item__year {
+  background: rgba(143, 194, 255, 0.14);
+}
+
+.honors-item__content {
+  min-width: 0;
+}
+
+.honors-item__title {
+  color: var(--site-heading);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
 .paper-item__footer {
   display: flex;
   align-items: baseline;
@@ -652,5 +704,10 @@ body {
   .paper-item__footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .honors-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
