@@ -15,7 +15,7 @@ const base = process.env.SITE_BASE
 
 const currentYear = new Date().getFullYear();
 const description =
-  "Academic homepage of Xiangyu Li, focusing on drug-target interaction prediction, computational pathology, and multimodal biomedical AI.";
+  "Academic homepage of Xiangyu Li, focusing on computational pathology and AI for bioinformatics.";
 
 export default defineConfig({
   lang: "zh-CN",
@@ -35,7 +35,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/#about-me" },
-      { text: "Education", link: "/#education" },
+      { text: "Journey", link: "/#research-journey" },
       { text: "Publications", link: "/#selected-publications" },
       { text: "Links", link: "/#links" },
       {
