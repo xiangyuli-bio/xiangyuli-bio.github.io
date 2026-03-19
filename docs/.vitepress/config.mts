@@ -14,73 +14,41 @@ const base = process.env.SITE_BASE
     : "/";
 
 const currentYear = new Date().getFullYear();
+const description =
+  "Academic homepage of Xiangyu Li, focusing on drug-target interaction prediction, computational pathology, and multimodal biomedical AI.";
 
 export default defineConfig({
   lang: "zh-CN",
-  title: "Xiangyuli",
-  description: "Research homepage covering drug-target interaction prediction, computational pathology, and interpretable AI.",
+  title: "Xiangyu Li",
+  description,
   cleanUrls: true,
-  lastUpdated: true,
   base,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
-    ["meta", { name: "theme-color", content: "#17364f" }],
+    ["meta", { name: "theme-color", content: "#2f78da" }],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:title", content: "Xiangyuli" }],
-    [
-      "meta",
-      {
-        property: "og:description",
-        content: "Research homepage covering drug-target interaction prediction, computational pathology, and interpretable AI."
-      }
-    ]
+    ["meta", { property: "og:title", content: "Xiangyu Li" }],
+    ["meta", { property: "og:description", content: description }]
   ],
   themeConfig: {
     logo: "/favicon.svg",
     nav: [
       { text: "Home", link: "/" },
-      { text: "About", link: "/about" },
-      { text: "Projects", link: "/projects" },
-      { text: "Publications", link: "/publications" },
-      { text: "Notes", link: "/notes/" },
+      { text: "About", link: "/#about-me" },
+      { text: "Education", link: "/#education" },
+      { text: "Publications", link: "/#selected-publications" },
+      { text: "Links", link: "/#links" },
       {
         text: "Scholar",
         link: "https://scholar.google.com/citations?user=cDmPBF4AAAAJ&hl=en"
       },
       { text: "GitHub", link: `https://github.com/${owner}` }
     ],
-    sidebar: {
-      "/notes/": [
-        {
-          text: "Notes",
-          items: [
-            { text: "Overview", link: "/notes/" },
-            { text: "VitePress Homepage Setup", link: "/notes/vitepress-homepage" }
-          ]
-        }
-      ]
-    },
-    search: {
-      provider: "local"
-    },
-    outline: {
-      level: [2, 3],
-      label: "On This Page"
-    },
-    docFooter: {
-      prev: "Previous",
-      next: "Next"
-    },
-    lastUpdated: {
-      text: "Last updated",
-      formatOptions: {
-        dateStyle: "medium",
-        timeStyle: "short"
-      }
-    },
+    outline: false,
+    docFooter: false,
     socialLinks: [{ icon: "github", link: `https://github.com/${owner}` }],
     footer: {
-      message: "Built with VitePress and deployed on GitHub Pages",
+      message: "Built with VitePress for a single-page academic homepage",
       copyright: `Copyright © ${currentYear} ${owner}`
     }
   }

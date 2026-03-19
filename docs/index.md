@@ -1,130 +1,219 @@
 ---
-title: Home
-pageClass: home-academic
+layout: home
+pageClass: home-reference
+
+hero:
+  name: "Xiangyu Li"
+  text: "Drug Discovery and Computational Pathology"
+  tagline: "M.S. student in Computer Science and Technology at Tianjin University. Previously received a B.Eng. in Computer Science and Technology from Henan Agricultural University."
+  image:
+    src: /profile-badge.svg
+    alt: Xiangyu Li
+  actions:
+    - theme: brand
+      text: Start
+      link: /#about-me
+    - theme: alt
+      text: Education
+      link: /#education
+    - theme: alt
+      text: Publications
+      link: /#selected-publications
+    - theme: alt
+      text: Scholar
+      link: https://scholar.google.com/citations?user=cDmPBF4AAAAJ&hl=en
 ---
 
-<div class="profile-shell">
-  <div class="profile-hero">
-    <div class="profile-copy">
-      <p class="eyebrow">Bioinformatics Research</p>
-      <h1>Xiangyuli</h1>
-      <p class="profile-role">Drug-Target Interaction Prediction • Computational Pathology • Interpretable AI</p>
-      <p class="profile-summary">
-        这个站点现在根据你上传的 5 篇论文整理成研究主页，主要覆盖两条公开可验证的工作线：
-        一条是 drug-target interaction prediction 与多模态融合，另一条是 computational pathology 中
-        基于 whole-slide images 的生物标志物状态预测。
-      </p>
-      <div class="profile-actions">
-        <a class="profile-button primary" href="/projects">Selected Projects</a>
-        <a class="profile-button" href="https://scholar.google.com/citations?user=cDmPBF4AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-        <a class="profile-button" href="/notes/">Notes</a>
-        <a class="profile-button" href="https://github.com/xiangyuli-bio" target="_blank" rel="noreferrer">GitHub</a>
+## About Me
+
+Welcome to my homepage. I am `Xiangyu Li`, currently an M.S. student in `Computer Science and Technology` at `Tianjin University`. Previously, I received my B.Eng. in `Computer Science and Technology` from `Henan Agricultural University` during `Sep. 2021 - Jun. 2025`. My recent research mainly focuses on drug-target interaction prediction, multimodal biomedical learning, and biomarker status prediction from whole-slide pathology images.
+
+<div class="home-profile-grid">
+  <div class="home-profile-column">
+    <h3 class="home-profile-column__title">Research Interests</h3>
+    <div class="home-interest-list">
+      <div class="home-interest-item">
+        <div class="home-interest-item__name">Drug-target interaction prediction</div>
+        <div class="home-interest-item__links">
+          <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c02908" target="_blank" rel="noreferrer">[CDI-DTI]</a>
+          <a href="https://ieeexplore.ieee.org/document/11356749" target="_blank" rel="noreferrer">[M3ST-DTI]</a>
+        </div>
+      </div>
+      <div class="home-interest-item">
+        <div class="home-interest-item__name">Computational pathology with whole-slide images</div>
+        <div class="home-interest-item__links">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S1746809425016131" target="_blank" rel="noreferrer">[CCANet]</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S2950261625000494" target="_blank" rel="noreferrer">[DSRNet]</a>
+        </div>
+      </div>
+      <div class="home-interest-item">
+        <div class="home-interest-item__name">Multimodal learning and feature alignment</div>
+      </div>
+      <div class="home-interest-item">
+        <div class="home-interest-item__name">Interpretable biomedical AI</div>
       </div>
     </div>
-    <div class="profile-aside">
-      <img src="/profile-badge.svg" alt="Profile badge" class="profile-art" />
-      <dl class="profile-meta">
-        <div>
-          <dt>Location</dt>
-          <dd>China</dd>
+  </div>
+
+  <div class="home-profile-column">
+    <h3 id="education" class="home-profile-column__title">Education</h3>
+    <div class="home-education-list">
+      <div class="home-education-item">
+        <div class="home-education-item__school">Tianjin University</div>
+        <div class="home-education-item__details">
+          <div>M.S. in Computer Science and Technology, Sep. 2025 - Present</div>
+          <div>Advisor: <a href="https://scholar.google.com/citations?hl=en&amp;user=gHzXz_YAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noreferrer">Ran Su</a></div>
         </div>
-        <div>
-          <dt>Focus</dt>
-          <dd>DTI prediction, multimodal learning, whole-slide image biomarker prediction</dd>
+      </div>
+      <div class="home-education-item">
+        <div class="home-education-item__school">Henan Agricultural University</div>
+        <div class="home-education-item__details">
+          <div>B.Eng. in Computer Science and Technology, Sep. 2021 - Jun. 2025</div>
+          <div>Mentor: <a href="https://scholar.google.com/citations?user=oHjrUo0AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Liangliang Liu</a></div>
         </div>
-        <div>
-          <dt>Email</dt>
-          <dd><a href="mailto:3217452489@qq.com">3217452489@qq.com</a></dd>
-        </div>
-      </dl>
+      </div>
     </div>
   </div>
 </div>
 
-## About
+## Research Path
 
-我希望这个站点像一份长期维护的研究主页。它不仅展示项目结果，也尽量把研究主题、公开代码和持续积累的方向组织得更清楚。
+<div class="experience-timeline">
+  <div class="experience-item experience-item--right">
+    <div class="experience-item__spacer"></div>
+    <div class="experience-item__axis"><span class="experience-item__dot"></span></div>
+    <div class="experience-item__content">
+      <div class="experience-item__date-row">
+        <div class="experience-item__date">Sep. 2025 - Present</div>
+      </div>
+      <h3 class="experience-item__title">
+        <span class="experience-item__role">M.S. Student</span>
+        <span class="experience-item__at">@</span>
+        <span class="experience-item__org">Tianjin University</span>
+      </h3>
+      <p class="experience-item__desc">
+        Working on drug-target interaction prediction, multimodal feature fusion, and interpretable biomedical AI under the guidance of
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=gHzXz_YAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noreferrer">Ran Su</a>.
+      </p>
+    </div>
+  </div>
 
-目前可以公开确认的内容主要来自你上传的 5 篇论文和公开项目页面，整体上形成了两条比较清晰的研究方向：
+  <div class="experience-item experience-item--left">
+    <div class="experience-item__content">
+      <div class="experience-item__date-row">
+        <div class="experience-item__date">Sep. 2021 - Jun. 2025</div>
+      </div>
+      <h3 class="experience-item__title">
+        <span class="experience-item__role">B.Eng. Student</span>
+        <span class="experience-item__at">@</span>
+        <span class="experience-item__org">Henan Agricultural University</span>
+      </h3>
+      <p class="experience-item__desc">
+        Focused on computational pathology, including MSI status prediction and biomarker prediction from whole-slide images, with
+        <a href="https://scholar.google.com/citations?user=oHjrUo0AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Liangliang Liu</a>.
+      </p>
+    </div>
+    <div class="experience-item__axis"><span class="experience-item__dot"></span></div>
+    <div class="experience-item__spacer"></div>
+  </div>
+</div>
 
-- 药物-靶标相互作用预测（DTI）与多模态表示学习
-- whole-slide image（WSI）上的生物标志物状态预测
-- 跨模态对齐、跨域泛化与可解释建模
-- 面向药物发现与病理智能分析的深度学习方法
+## Selected Publications
 
-## Research / Interests
+<p class="home-note">Only officially published works are listed below. Manuscripts currently under review are intentionally omitted.</p>
+<div class="paper-list" aria-label="Paper List">
+<div class="paper-item">
+<div class="paper-item__thumb paper-item__thumb--brand"><span>CDI-DTI</span></div>
+<div class="paper-item__body">
+<h3 class="paper-item__title">CDI-DTI: A Strong Cross-Domain Interpretable Drug-Target Interaction Prediction Framework Based on Multi-Strategy Fusion</h3>
+<p class="paper-item__authors"><strong>Xiangyu Li</strong>, Haojie Yang, Kaimiao Hu, Runzhi Wu, Ruibing Chen, Guangjian Ni, Liangliang Liu, Ran Su</p>
+<div class="paper-item__footer">
+<div class="paper-item__links">
+<a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c02908" target="_blank" rel="noreferrer">[Paper]</a>
+</div>
+<span class="paper-item__year">JCIM 2025</span>
+</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-item__thumb paper-item__thumb--brand"><span>M3ST-DTI</span></div>
+<div class="paper-item__body">
+<h3 class="paper-item__title">M3ST-DTI: A Multi-Task Learning Model for Drug-Target Interactions Based on Multi-Modal Features and Multi-Stage Alignment</h3>
+<p class="paper-item__authors"><strong>Xiangyu Li</strong>, Ran Su, Liangliang Liu</p>
+<div class="paper-item__footer">
+<div class="paper-item__links">
+<a href="https://ieeexplore.ieee.org/document/11356749" target="_blank" rel="noreferrer">[Paper]</a>
+</div>
+<span class="paper-item__year">IEEE 2025</span>
+</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-item__thumb paper-item__thumb--brand"><span>CCANet</span></div>
+<div class="paper-item__body">
+<h3 class="paper-item__title">A Continuously Coupled Attention Neural Network for MSI Status Classification in Whole Slide Images</h3>
+<p class="paper-item__authors">Zhongqiang Pan, <strong>Xiangyu Li</strong>, Liangliang Liu</p>
+<div class="paper-item__footer">
+<div class="paper-item__links">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1746809425016131" target="_blank" rel="noreferrer">[Paper]</a>
+</div>
+<span class="paper-item__year">BSPC 2025</span>
+</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-item__thumb paper-item__thumb--brand"><span>DSRNet</span></div>
+<div class="paper-item__body">
+<h3 class="paper-item__title">A Depth-Wise Separable Residual Neural Network for PCDH8 Status Prediction in Thyroid Cancer Pathological Images</h3>
+<p class="paper-item__authors">Linlin Qi, <strong>Xiangyu Li</strong>, Zhihong Liu, Pei Zhang, Liangliang Liu</p>
+<div class="paper-item__footer">
+<div class="paper-item__links">
+<a href="https://www.sciencedirect.com/science/article/pii/S2950261625000494" target="_blank" rel="noreferrer">[Paper]</a>
+</div>
+<span class="paper-item__year">Intelligent Oncology 2025</span>
+</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-item__thumb paper-item__thumb--brand"><span>ISBRA</span></div>
+<div class="paper-item__body">
+<h3 class="paper-item__title">Patch-Based Coupled Attention Network to Predict MSI Status in Colon Cancer</h3>
+<p class="paper-item__authors"><strong>Xiangyu Li</strong>, Liangliang Liu</p>
+<div class="paper-item__footer">
+<div class="paper-item__links">
+<a href="https://link.springer.com/book/10.1007/978-981-97-5131-0" target="_blank" rel="noreferrer">[Paper]</a>
+</div>
+<span class="paper-item__year">ISBRA 2024</span>
+</div>
+</div>
+</div>
+</div>
 
-根据这 5 篇论文，我把研究兴趣整理成下面几组更贴近真实工作的主题：
+## Links
 
-- Drug-Target Interaction Prediction：关注药物分子与蛋白之间的相互作用建模。
-- Computational Pathology：关注基于 whole-slide images 的 MSI、PCDH8 等关键标志物状态预测。
-- Multi-modal Fusion：结合序列、结构、功能与图像多尺度信息提升模型性能。
-- Interpretability：不仅追求准确率，也关注结合位点、病理区域和跨模态对齐的可解释性。
-- Cross-domain / Cold-start Generalization：提升模型在真实药物发现任务中的实用性。
+<div class="home-links-grid">
+  <a class="home-link-card" href="https://scholar.google.com/citations?user=cDmPBF4AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
+    <span class="home-link-card__title">Google Scholar</span>
+    <span class="home-link-card__meta">Official publication list and citations</span>
+  </a>
 
-## Selected Projects
+  <a class="home-link-card" href="https://github.com/xiangyuli-bio" target="_blank" rel="noreferrer">
+    <span class="home-link-card__title">GitHub</span>
+    <span class="home-link-card__meta">Code repositories and project implementations</span>
+  </a>
 
-### CDI-DTI
+  <a class="home-link-card" href="mailto:xiangyuli@tju.edu.cn">
+    <span class="home-link-card__title">Email</span>
+    <span class="home-link-card__meta">xiangyuli@tju.edu.cn</span>
+  </a>
 
-`CDI-DTI` 是你公开仓库里信息最完整、研究指向也最清晰的项目之一。仓库 README 和 arXiv 摘要都显示它重点解决
-cross-domain generalization、cold-start prediction 和 interpretability。
+  <a class="home-link-card" href="https://scholar.google.com/citations?hl=en&amp;user=gHzXz_YAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noreferrer">
+    <span class="home-link-card__title">Graduate Advisor</span>
+    <span class="home-link-card__meta">Ran Su | Tianjin University</span>
+  </a>
 
-- Multi-modal encoder：整合文本、结构与功能模态
-- Model design：引入 cross-attention、deep orthogonal fusion 和 feature alignment
-- Benchmarks：README 明确提到在 BindingDB 与 Davis 上表现强，尤其面向 cold-start / cross-domain 场景
-- Source: [GitHub Repository](https://github.com/xiangyuli-bio/CDI-DTI)
-- Paper: [arXiv: CDI-DTI](https://arxiv.org/abs/2510.19520)
-
-### M3ST-DTI
-
-`M3ST-DTI` 继续沿着 DTI 方向推进，但更强调 multi-task learning、multi-stage alignment 和 multi-modal feature integration。
-
-- Multi-task learning：同时优化多任务目标以增强泛化能力
-- Feature design：结合 textual、structural、functional 三类模态
-- Alignment strategy：引入多阶段对齐与正交融合减少冗余
-- Paper: [IEEE Xplore](https://ieeexplore.ieee.org/document/11356749)
-
-### CCANet / CovAttnNet for MSI Prediction
-
-在计算病理方向，你的论文把 attention 和 patch / tile 级建模用于结肠癌 MSI 状态预测，研究主题非常明确：如何从超大 WSI 中提取兼顾局部和全局的信息。
-
-- ISBRA 2024 work：提出 patch-based coupled attention network 预测 colon cancer 中的 MSI status
-- Journal extension：进一步发展为 CCANet，结合 tile-level local branch 与 patch-level global branch
-- Application：面向结肠癌辅助诊断中的关键标志物识别
-- Paper: [ISBRA 2024](https://link.springer.com/book/10.1007/978-981-97-5131-0)
-- Paper: [CCANet article](https://www.sciencedirect.com/science/article/abs/pii/S1746809425016131)
-
-### DSRNet for PCDH8 Prediction
-
-在甲状腺癌病理图像方向，你的论文提出了 `DSRNet`，目标是直接从 WSIs 非侵入式预测 PCDH8 基因表达状态。
-
-- Task：thyroid cancer pathological images 上的 PCDH8 status prediction
-- Model design：depth-wise separable convolution、residual connection 和多尺度特征建模
-- Value：兼顾效率、准确性和潜在临床可解释性
-- Paper: [Intelligent Oncology article](https://www.sciencedirect.com/science/article/pii/S2950261625000494)
-
-## Education / Timeline
-
-这一部分现在可以比之前更真实一些，因为论文里已经能看出你的研究路径轮廓，但我还是避免补没有明确公开依据的个人履历。
-
-### Current public trajectory
-
-- 早期公开工作集中在 colon cancer / thyroid cancer 的 WSI biomarker prediction
-- 近期研究进一步延展到 drug-target interaction prediction、多模态特征融合与跨域可解释建模
-- Scholar 页面已经挂入导航，后续可以继续补 citation 和正式论文清单
-
-### Future additions
-
-- 教育背景
-- 研究经历 / 实验室信息
-- 论文列表与 citation 数据
-- 项目时间线与 benchmark 结果汇总
-
-## Contact
-
-如果你是通过 GitHub 或这个主页找到我，欢迎继续交流。
-
-- GitHub: [xiangyuli-bio](https://github.com/xiangyuli-bio)
-- Google Scholar: [Scholar Profile](https://scholar.google.com/citations?user=cDmPBF4AAAAJ&hl=en)
-- Email: [3217452489@qq.com](mailto:3217452489@qq.com)
-- More details: [Contact page](/contact)
+  <a class="home-link-card" href="https://scholar.google.com/citations?user=oHjrUo0AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
+    <span class="home-link-card__title">Undergraduate Mentor</span>
+    <span class="home-link-card__meta">Liangliang Liu | Henan Agricultural University</span>
+  </a>
+</div>
