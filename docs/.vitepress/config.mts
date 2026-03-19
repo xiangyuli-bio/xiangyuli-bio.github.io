@@ -24,14 +24,14 @@ export default defineConfig({
   cleanUrls: true,
   base,
   head: [
-    ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+    ["link", { rel: "icon", type: "image/png", href: "/favicon.png" }],
     ["meta", { name: "theme-color", content: "#2f78da" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:title", content: "Xiangyu Li" }],
     ["meta", { property: "og:description", content: description }]
   ],
   themeConfig: {
-    logo: "/favicon.svg",
+    logo: "/favicon.png",
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/#about-me" },

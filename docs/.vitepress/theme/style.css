@@ -97,16 +97,16 @@ body {
 }
 
 .VPHero .image-container {
-  padding: 14px;
-  border: 1px solid rgba(47, 120, 218, 0.16);
-  border-radius: 36px;
-  background: rgba(255, 255, 255, 0.62);
-  box-shadow: 0 20px 44px rgba(23, 42, 69, 0.1);
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .dark .VPHero .image-container {
-  background: rgba(20, 28, 36, 0.72);
-  border-color: rgba(143, 194, 255, 0.2);
+  background: transparent;
+  border-color: transparent;
 }
 
 .VPHero .image-src {
@@ -114,6 +114,10 @@ body {
   border-radius: 28px;
   object-fit: cover;
   box-shadow: 0 10px 24px rgba(23, 42, 69, 0.12);
+}
+
+.VPHero .image-bg {
+  display: none;
 }
 
 .vp-doc,
