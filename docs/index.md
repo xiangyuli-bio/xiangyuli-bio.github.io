@@ -20,6 +20,9 @@ hero:
       text: Publications
       link: /#selected-publications
     - theme: alt
+      text: Honors
+      link: /#selected-honors
+    - theme: alt
       text: Scholar
       link: https://scholar.google.com/citations?user=cDmPBF4AAAAJ&hl=en
 ---

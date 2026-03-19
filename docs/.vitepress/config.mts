@@ -37,6 +37,7 @@ export default defineConfig({
       { text: "About", link: "/#about-me" },
       { text: "Journey", link: "/#research-journey" },
       { text: "Publications", link: "/#selected-publications" },
+      { text: "Selected Honors", link: "/#selected-honors" },
       { text: "Links", link: "/#links" },
       {
         text: "Scholar",
