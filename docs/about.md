@@ -1,25 +1,45 @@
-# 关于我
+# About
 
-我希望这份主页像一张长期维护的线上名片，不只是展示“我做过什么”，也能说明“我为什么这样做”。
+这个站点现在更接近一份 academic-style personal homepage，而且内容已经根据你上传的论文改成了更真实的研究主页版本。
 
-## 我关注的方向
+## What This Homepage Is For
 
-- 前端体验：让页面更快、更稳，也更容易被理解和维护。
-- 工程效率：把重复劳动收敛成流程，把个人经验沉淀成团队资产。
-- 长期积累：项目完成之后，依然愿意把过程整理成文档和可复用方案。
+- 作为研究主页，概括当前公开可见的研究方向与项目
+- 作为研究入口，同时连接论文、Scholar 和 GitHub 上的公开代码
+- 作为资料汇总页，后续继续补 Scholar、论文、经历和实验结果
 
-## 我期待参与的事情
+## Current Focus
 
-- 有明确目标、愿意持续打磨体验的 Web 项目
-- 能真正解决问题，而不是只堆砌功能的产品
-- 有合作氛围、愿意一起把细节做好的一群人
+- Drug-target interaction prediction
+- Computational pathology based on whole-slide images
+- Molecular and protein representation learning
+- Multi-modal fusion across sequence, structure, functional and image information
+- Interpretable models for drug discovery
+- Biomarker status prediction from pathological images
+- Cross-domain and cold-start generalization
 
-## 这份主页的作用
+## Publicly Verifiable Project Direction
 
-这不是一份静态简历，而是我持续更新的个人空间。以后我会把项目复盘、技术笔记、工具配置和阶段性总结都放在这里。
+根据你上传的论文与公开项目页面，当前可验证的研究工作主要围绕以下脉络展开：
 
-## 你可以继续替换的内容
+- `CCANet / CovAttnNet`：结肠癌 MSI 状态预测，强调 WSI 上的局部-全局注意力融合
+- `DSRNet`：甲状腺癌病理图像中的 PCDH8 状态预测
+- `M3ST-DTI`：多任务、多阶段对齐的多模态 DTI 预测模型
+- `CDI-DTI`：强调 cross-domain interpretability 与 multi-strategy fusion
 
-- 加入你的真实工作经历或技术方向
-- 增加擅长的技术栈和项目成果
-- 放上你的社交账号、博客域名或简历下载地址
+这些工作合起来可以概括成一条更清晰的主线：用 attention、multi-modal learning 和 interpretable modeling 去解决生物医学场景中的关键预测任务。
+
+## Why This Site Uses VitePress
+
+我保留了 VitePress 作为站点框架，因为它很适合研究主页这种“静态页面 + 文档化记录 + 持续更新”的场景：
+
+- 结构清晰，适合整理论文、项目和笔记
+- 维护成本低，适合长期更新
+- 与 GitHub Pages 配合顺滑，方便公开展示
+
+## What Can Be Expanded Next
+
+- 加入教育背景、实验室或机构信息
+- 补充正式论文列表和 citation 信息
+- 增加 benchmark 结果、模型图和项目截图
+- 放入 CV、个人简介 PDF 或更多研究链接

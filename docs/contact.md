@@ -1,14 +1,17 @@
-# 联系我
+# Contact
 
-如果你想交流技术、沟通合作，或者只是想打个招呼，都欢迎通过下面的方式联系我。
+如果你想交流项目、技术或合作想法，可以通过下面的方式联系我。
 
-## 联系方式
+## Contact Information
 
-- GitHub: [li-xiangyuaichirou](https://github.com/li-xiangyuaichirou)
+- GitHub: [xiangyuli-bio](https://github.com/xiangyuli-bio)
+- Google Scholar: [Scholar Profile](https://scholar.google.com/citations?user=cDmPBF4AAAAJ&hl=en)
 - Email: [3217452489@qq.com](mailto:3217452489@qq.com)
 
-## 建议补充
+## You Can Add More Later
 
-- 如果你有自定义域名，可以把它放到导航栏和个人简介里。
-- 如果你有简历文件，可以把它放进 `docs/public/` 后直接挂一个下载链接。
-- 如果你后面接入评论、统计或订阅功能，这一页也很适合继续扩展。
+- ORCID / ResearchGate / institution homepage
+- 自定义域名
+- 简历下载链接
+- 个人博客或其他社交主页
+- 评论、统计或订阅入口

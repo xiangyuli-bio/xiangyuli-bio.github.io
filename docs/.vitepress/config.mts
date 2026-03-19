@@ -1,9 +1,9 @@
 import { defineConfig } from "vitepress";
 
 const repository = process.env.GITHUB_REPOSITORY;
-const [owner = "li-xiangyuaichirou", repo = "myself"] = repository
+const [owner = "xiangyuli-bio", repo = "xiangyuli-bio.github.io"] = repository
   ? repository.split("/")
-  : ["li-xiangyuaichirou", "myself"];
+  : ["xiangyuli-bio", "xiangyuli-bio.github.io"];
 
 const base = process.env.SITE_BASE
   ? process.env.SITE_BASE
@@ -17,34 +17,45 @@ const currentYear = new Date().getFullYear();
 
 export default defineConfig({
   lang: "zh-CN",
-  title: "Xiang 的主页",
-  description: "前端开发、项目作品与学习笔记",
+  title: "Xiangyuli",
+  description: "Research homepage covering drug-target interaction prediction, computational pathology, and interpretable AI.",
   cleanUrls: true,
   lastUpdated: true,
   base,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
-    ["meta", { name: "theme-color", content: "#0d7c66" }],
+    ["meta", { name: "theme-color", content: "#17364f" }],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:title", content: "Xiang 的主页" }],
-    ["meta", { property: "og:description", content: "前端开发、项目作品与学习笔记" }]
+    ["meta", { property: "og:title", content: "Xiangyuli" }],
+    [
+      "meta",
+      {
+        property: "og:description",
+        content: "Research homepage covering drug-target interaction prediction, computational pathology, and interpretable AI."
+      }
+    ]
   ],
   themeConfig: {
     logo: "/favicon.svg",
     nav: [
-      { text: "首页", link: "/" },
-      { text: "关于我", link: "/about" },
-      { text: "项目", link: "/projects" },
-      { text: "笔记", link: "/notes/" },
-      { text: "联系", link: "/contact" }
+      { text: "Home", link: "/" },
+      { text: "About", link: "/about" },
+      { text: "Projects", link: "/projects" },
+      { text: "Publications", link: "/publications" },
+      { text: "Notes", link: "/notes/" },
+      {
+        text: "Scholar",
+        link: "https://scholar.google.com/citations?user=cDmPBF4AAAAJ&hl=en"
+      },
+      { text: "GitHub", link: `https://github.com/${owner}` }
     ],
     sidebar: {
       "/notes/": [
         {
-          text: "学习笔记",
+          text: "Notes",
           items: [
-            { text: "总览", link: "/notes/" },
-            { text: "VitePress 主页搭建记录", link: "/notes/vitepress-homepage" }
+            { text: "Overview", link: "/notes/" },
+            { text: "VitePress Homepage Setup", link: "/notes/vitepress-homepage" }
           ]
         }
       ]
@@ -54,24 +65,22 @@ export default defineConfig({
     },
     outline: {
       level: [2, 3],
-      label: "目录"
+      label: "On This Page"
     },
     docFooter: {
-      prev: "上一页",
-      next: "下一页"
+      prev: "Previous",
+      next: "Next"
     },
     lastUpdated: {
-      text: "最近更新",
+      text: "Last updated",
       formatOptions: {
         dateStyle: "medium",
         timeStyle: "short"
       }
     },
-    socialLinks: [
-      { icon: "github", link: `https://github.com/${owner}` }
-    ],
+    socialLinks: [{ icon: "github", link: `https://github.com/${owner}` }],
     footer: {
-      message: "Powered by VitePress and GitHub Pages",
+      message: "Built with VitePress and deployed on GitHub Pages",
       copyright: `Copyright © ${currentYear} ${owner}`
     }
   }
