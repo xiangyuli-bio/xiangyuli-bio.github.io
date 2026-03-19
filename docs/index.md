@@ -7,7 +7,7 @@ hero:
   text: "Computational Pathology and AI for Bioinformatics"
   tagline: "流水不争先，争的是滔滔不绝。"
   image:
-    src: /logo-main.jpg
+    src: /logo.jpg
     alt: Xiangyu Li
   actions:
     - theme: brand
